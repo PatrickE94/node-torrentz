@@ -1,0 +1,27 @@
+{
+  "name": "node-torrentz",
+  "version": "1.0.0",
+  "description": "A rough node API wrapper for torrentz.eu",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PatrickE94/node-torrentz"
+  },
+  "keywords": [
+    "torrentz.eu",
+    "torrentz",
+    "torrents",
+    "scraper",
+    "api"
+  ],
+  "author": "Patrick Engström",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PatrickE94/node-torrentz/issues"
+  },
+  "homepage": "https://github.com/PatrickE94/node-torrentz",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "got": "^5.3.0"
+  }
+}
