@@ -27,11 +27,12 @@ or simply a 'String query'
   page: 1,
   torrents: [
     { title: 'Linux',
-       hash: '...',
-       date: Date Object,
-       size: '700 MB',
-       seeds: 100,
-       peers: 99
+      categories: [ 'applications', 'linux' ]
+      hash: '...',
+      date: Date Object,
+      size: '700 MB',
+      seeds: 100,
+      peers: 99
     },
     ....
   ]
@@ -62,7 +63,7 @@ The only actual argument is an info hash.
   sources: [
     {
       link: 'http://...',
-      tile: '1337x.to'
+      title: '1337x.to'
     },
     ...
   ],
