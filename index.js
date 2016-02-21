@@ -84,8 +84,16 @@
           pagecount: parseInt($('p a:last-child', results).prev().text()),
           torrents: items.map(function(index, item) {
             if (!$('a', item).text()) return null;
+            var title = $('a', item).text();
+            var categories = $('dt', item)
+              .text().substr(title.length)
+              .split(' ').filter(function(e){
+                return !!e && e != '»';
+              });
+
             return {
-              title: $('a', item).text(),
+              title: title,
+              categories: categories,
               hash: $('a', item).attr('href').substr(1),
               date: new Date($('span.a span', item).attr('title') + ' UTC'),
               size: $('span.s', item).text(),
